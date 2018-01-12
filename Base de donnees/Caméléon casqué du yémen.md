@@ -3,6 +3,7 @@
 
 ![Caméléon](http://www.desjardins-inspirations.fr/wp-content/uploads/img-principale2-673x300.jpg)
 
+Le mâle peut atteindre 50 à 60 cm de long, est de couleur verte avec des rayures jaunes et orange contrairement aux femelles qui sont uniformément bleues ou vertes. Il possède sur la tête un casque imposant caractéristique.
 
 habitat : jungle 
 
