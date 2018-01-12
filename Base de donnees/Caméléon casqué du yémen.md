@@ -15,7 +15,7 @@ Point froid: 24-26°C.
 
 Nuit: 20-22°C. 
 
-Nombre de grillon: 4 grillons par jour 
+Nombre de grillon: 4 grillons tout les deux jours. 
 
 Hygrométrie : 40-60 % d'humidité dans l'air.
 
