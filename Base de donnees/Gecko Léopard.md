@@ -1,5 +1,7 @@
 # Le Gecko Leopard
 
+![Gecko](http://cdn0.wideopenpets.com/wp-content/uploads/2016/03/bigstock-Leopard-gecko-in-front-of-a-wh-119625026.jpg)
+
 habitat : semi-désertique. 
 
 Cycle Lumineux : 12h/12h. 
