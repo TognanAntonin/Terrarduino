@@ -19,10 +19,12 @@ Voici une première lister qui va évolué tout au long des projets:
 - Ampoule U.V;
 - Plaque chauffante;
 - Minuteur arduino;
-- Pelletier + radiateur (condensation);
+- Pelletier + radiateur (condensation); ok pelletier
 - Servo-moteur;
 - Trappe;
 - Reservoir d'eau;
+- Laser/récepteur;
+- Proximity sensor;
 
 Nous aurons besoin de faire un page web afin de contrôler le terrarium à distance. Si le projet avance comme il faut, nous pensons de créer une application.
 
