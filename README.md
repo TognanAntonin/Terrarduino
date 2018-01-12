@@ -20,7 +20,7 @@ Le terrarduino est fait afin qu'un reptile puisse vivre dans le terrarium sans q
 Pour cela, nous voulons créer une base de donnée avec de nombreuses informations sur les principaux reptiles qui existent en captivité afin qu'en choississant dans la base de donnée l'espèce d'un reptile, il puisse vivre sans que nous aillons trop à nous renseigner sur lui ou que nous puissions partir en vacance sans faire appel à quelqu'un pour qu'il s'en occupe.
 
 # Matériel utilisé 
-Encore aucun matériel utilisé 
+Voici une première liste de matériaux (12/01)
 
 # Population ciblée
 
