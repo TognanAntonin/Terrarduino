@@ -46,6 +46,7 @@ Hygrométrie :40-60 % d'humidité dans l'air.
 
 
 Vidéo informative : https://www.youtube.com/watch?v=TyLg_TOscos
+Fiche technique: http://www.lftshop.com/site/medias/fiches/agamebarbu.jpg
 
 Le Caméléon casque du Yémen :
 
@@ -61,6 +62,8 @@ Hygrométrie : 40-60 % d'humidité dans l'air.
 
 Vidéo informative : https://www.youtube.com/watch?v=Y0JWRvQwVRs
 
+Fiche technique: http://www.lftshop.com/site/medias/fiches/calyptratus.jpg
+
 Le gecko léopard : 
 
 ![Gecko](http://cdn0.wideopenpets.com/wp-content/uploads/2016/03/bigstock-Leopard-gecko-in-front-of-a-wh-119625026.jpg)
@@ -75,5 +78,7 @@ Nombre de grillon:  2 grillons par jour.
 Hygrométrie : 40-60 % d'humidité dans l'air. 
 
 Vidéo informative:https://www.youtube.com/watch?v=_wPS-2LxegA
+
+Fiche technique: http://www.lftshop.com/site/medias/fiches/geckoleopard.jpg
 
 La quantité de nourriture que nous devons leurs données est très aléatoire selon l'âge, le sexe, la taille ...
