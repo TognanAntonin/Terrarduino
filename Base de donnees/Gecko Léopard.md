@@ -2,6 +2,8 @@
 
 ![Gecko](http://cdn0.wideopenpets.com/wp-content/uploads/2016/03/bigstock-Leopard-gecko-in-front-of-a-wh-119625026.jpg)
 
+Le Gecko léopard est une espèce de gecko de relativement grande taille. Les individus adultes mesurent environ 24,5 cm pour les mâles et 21 cm pour les femelles2. La taille de la queue peut atteindre jusqu'à 70 % de la longueur museau-cloaque3. La taille des individus est sans doute variable selon les populations4. Le corps et la tête sont massifs, et cette dernière est triangulaire, avec un museau pointu. Les pattes sont courtes et fines par rapport au corps. La queue est cylindrique, large et charnue ; elle est segmentée et pointue à son extrémité. Il se sert de cette dernière afin de faire des réserves de nourritures. Plus sa queue est grosse, plus il a de réserves de graisses.
+
 habitat : semi-désertique. 
 
 Cycle Lumineux : 12h/12h. 
