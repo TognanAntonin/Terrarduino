@@ -76,5 +76,4 @@ Hygrométrie : 40-60 % d'humidité dans l'air.
 
 Vidéo informative:https://www.youtube.com/watch?v=_wPS-2LxegA
 
-
-
+La quantitée de nourriture que nous devons leurs données est très aléatoire celon l'age, le sexe, la taille ...
