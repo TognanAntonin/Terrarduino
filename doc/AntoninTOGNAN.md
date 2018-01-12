@@ -36,12 +36,45 @@ Le Pogona Vitticeps :
 
 ![Pogona](https://tse3.mm.bing.net/th?id=OIP.LbCBSYcTixFAf1dprQ7bgQHaFj&pid=Api)
 
+habitat:semi-désertique.
 Cycle Lumineux : 12h/12h.
-Point chaud : 50°C.
-Point froid: 28°C.
-Point froid nuit: 23°C.
+Point chaud : 40-50°C.
+Point froid: 24-28°C.
+Nuit: 20-24°C.
 Nombre de grillon:  4/6 grillons par jour (ne pas oublier de lui donner des végétaux(type mache , pissenlit ...)).
-Hygrométrie : Désertique 25 % d'humidité dans l'air. 
+Hygrométrie :40-60 % d'humidité dans l'air. 
 
 
 Vidéo informative: https://www.youtube.com/watch?v=TyLg_TOscos
+
+Le Caméléon casque du Yémen :
+
+![Caméléon](http://www.desjardins-inspirations.fr/wp-content/uploads/img-principale2-673x300.jpg)
+
+habitat:jungle
+Cycle Lumineux : 12h/12h.
+Point chaud : 30-40°C.
+Point froid: 24-26°C.
+Nuit: 20-22°C.
+Nombre de grillon:  4 grillons par jour (ne pas oublier de lui donner des végétaux(type mache , pissenlit ...)).
+Hygrométrie : 40-60 % d'humidité dans l'air. 
+
+Vidéo informative:https://www.youtube.com/watch?v=Y0JWRvQwVRs
+
+Le gecko léopard: 
+
+![Gecko](http://cdn0.wideopenpets.com/wp-content/uploads/2016/03/bigstock-Leopard-gecko-in-front-of-a-wh-119625026.jpg)
+
+
+habitat:semi-désertique
+Cycle Lumineux : 12h/12h.
+Point chaud : 30-35°C.
+Point froid: 24-28°C.
+Nuit: 20-24°C.
+Nombre de grillon:  2 grillons par jour.
+Hygrométrie : 40-60 % d'humidité dans l'air. 
+
+Vidéo informative:https://www.youtube.com/watch?v=_wPS-2LxegA
+
+
+
