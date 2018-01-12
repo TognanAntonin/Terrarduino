@@ -14,4 +14,6 @@ Nombre de grillon: 2 grillons par jour.
 
 Hygrométrie : 40-60 % d'humidité dans l'air.
 
+Il faut savoir que la quantitée de grillon donnée au reptile dépend de son age, son poid, son sexe ...
+
 Fiche technique: http://www.lftshop.com/site/medias/fiches/geckoleopard.jpg
