@@ -2,6 +2,8 @@
 
 ![Pogona](https://tse3.mm.bing.net/th?id=OIP.LbCBSYcTixFAf1dprQ7bgQHaFj&pid=Api)
 
+Il s'agit d'un lézard à l'allure massive, aplati dorso-ventralement, possédant de fortes griffes et des paupières mobiles. 
+
 habitat: semi-désertique. 
 
 Cycle Lumineux : 12h/12h. 
