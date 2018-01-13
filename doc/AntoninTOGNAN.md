@@ -101,5 +101,13 @@ Pour créer se faux terrarium, nous allons utiliser des plaques en plexiglass. P
 
 * Entre la séance du 12 Janvier 2018 et la séance du 19 Janvier 2018 :
 
+J'ai cherché des générateur de boîte sur internet et nous allons utiliser celui-ci :
+
+http://carrefour-numerique.cite-sciences.fr/fablab/wiki/doku.php?id=projets:generateur_de_boites
+
+Pour notre boîte, nous prendrons des dimensions assez petites. Les dimensions pour un vraie terrarium doivent être largement supérieur.
+
+-Largeur :250 mm; Profondeur : 250 mm, Hauteur : 300 mm ,Épaisseur du matériau : l'épaisseur de la plaque de plexiglass que nous allons recevoir.
+
 
 
