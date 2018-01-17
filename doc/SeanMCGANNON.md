@@ -19,7 +19,7 @@ Voici une première lister qui va évolué tout au long des projets:
 - Ampoule U.V;
 - Plaque chauffante;
 - Minuteur arduino;
-- Pelletier + radiateur (condensation); ok pelletier
+- Peltier + radiateur (condensation); ok pelletier
 - Servo-moteur;
 - Trappe;
 - Reservoir d'eau;
@@ -29,3 +29,5 @@ Voici une première lister qui va évolué tout au long des projets:
 Nous aurons besoin de faire un page web afin de contrôler le terrarium à distance. Si le projet avance comme il faut, nous pensons de créer une application.
 
 J'ai aussi commencer à chercher les codes uties a faire marcher les composants que nous avons pu avoir, tel que le capteur de température et d'humidité et le laser + recepteur. Probleme avec le capteur de température. J'obtiens des résultats aberrant comme 691°C de température.
+
+Le peltier va servir au refroidissment du milieu quand cela sera nécessaire. Regarder la méthode de branchement to do!
