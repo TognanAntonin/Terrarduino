@@ -3,6 +3,11 @@ Ce programme utilise un laser, recepteur et un servomoteur. Si le recepteur reç
 Il y a encore des modifications a faire afin qu'il fasse exactement ce qu'on veut. Mais il manque du materiel.
 
 Le branchement: 
+
 -laser : le - sur le gnd, le milieu sur l'entrée 6, et le dernier sur vdd;
+
 -récepteur : le vcc sur le 5V, le gnd sur le gnd et le A0 sur l'entrée 7;
+
 -servomoteur : le fil marron sur le gnd, le rouge sur 5V et l'orange sur l'entrée 9.
+
+Ne plus toucher la vis sur le récepteur, les réglages ont été fait.
