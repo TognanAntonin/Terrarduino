@@ -1,44 +1,32 @@
-// Test des capteurs d'humidité et de température DHT-11 / DHT-21 /  DHT-22
-
 #include "DHT.h"   // Librairie des capteurs DHT
-#define DHTPIN 2    // Changer le pin sur lequel est branché le DHT
-#define DHTTYPE DHT22       // DHT 22  (AM2302)
+#define DHTPIN 8   // pin sur lequel est branché le DHT
+#define DHTTYPE DHT11       // DHT 11  (AM2302)
 
 DHT dht(DHTPIN, DHTTYPE); 
 
+float h = 0;
+float t = 0;
+
 void setup() {
-  Serial.begin(9600); 
-  Serial.println("DHTxx test!");
- 
-  dht.begin();
+Serial.begin(9600);
+dht.begin();
+
 }
 
 void loop() {
-  // Délai de 2 secondes entre chaque mesure. La lecture prend 250 millisecondes
-  delay(2000);
-
-  float h = dht.readHumidity();             // Lecture du taux d'humidité
-  float t = dht.readTemperature();          // Lecture de la température en Celcius
-  float f = dht.readTemperature(true);      // Pour lire la température en Fahrenheit
-  
-  // Stop le programme et renvoie un message d'erreur si le capteur ne renvoie aucune mesure
-  if (isnan(h) || isnan(t) || isnan(f)) {
-    Serial.println("Echec de lecture !");
-    return;
-  }
-
-  // Calcul la température ressentie. Le calcul est effectué à partir de la température en Fahrenheit
-  // On fait la conversion en Celcius dans la foulée
-  float hi = dht.computeHeatIndex(f, h);
- 
-  Serial.print("Humidite: ");
-  Serial.print(h);
-  Serial.println(" %\t");
-  Serial.print("Temperature: "); 
-  Serial.print(t);
-  Serial.println(" °C ");
-//  Serial.print("Temperature ressentie: ");
-//  Serial.print(dht.convertFtoC(hi));
-//  Serial.println(" *C");
+h = dht.readHumidity();
+t = dht.readTemperature();
+if (isnan(t) || isnan(h)) {
+  Serial.println("Lecture impossible!");
 }
+else {
+  Serial.print("Humidité : ");
+  Serial.print(h);
+  Serial.print(" %\t");
+  Serial.print("Température :");
+  Serial.print(t);
+  Serial.println(" *C");
+}
+delay(1000);
 
+}
