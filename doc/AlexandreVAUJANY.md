@@ -5,6 +5,8 @@ J'ai formé mon groupe de projet avec Antonin Tognan et Sean McGannon. Tout d'ab
 
 Compte-rendu de la séance du 12 janvier 2018
 
+J'ai créé un emploi du temps afin que l'on se fixe pour faire différentes tâches de ce projet. Ensuite, j'ai fait des recherches pour voir quels types de capteurs utiliser et dans quel but. Enfin j'ai fait des recherches sur des matériaux utilisables dont notamment le plexiglas pour voir quels étaient ses avantages et ses inconvénients. 
+
 
 
 
