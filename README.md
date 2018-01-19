@@ -12,6 +12,10 @@ Une équipe composée de trois personnes:
 * McGannon Sean 
 * Tognan Antonin
 
+# Problématique
+
+Comment permettre aux reptiles de vivre en autonomie dans un terrarium?
+
 # Description du projet
 
 Dans ce projet, nous allons essayer de créer un terrarium qui contrôle tout seul l'humidité, la chaleur, l'eau, la nourriture etc ...
