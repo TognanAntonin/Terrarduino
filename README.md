@@ -14,7 +14,7 @@ Une équipe composée de trois personnes:
 
 # Problématique
 
-Comment permettre aux reptiles de vivre en autonomie dans un terrarium?
+# Comment permettre aux reptiles de vivre en autonomie dans un terrarium?
 
 # Description du projet
 
