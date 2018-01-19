@@ -86,7 +86,7 @@ La quantité de nourriture que nous devons leurs données est très aléatoire s
 
 * Séance du 12 Janvier 2018 :
 
-Dans cette séance, nous avons d'abord commencé à faire la liste de ce que nous allons avoir besois afin de faire notre terrarduino. Cette liste n'est pas définitive: - Capteur de température; capteur d'humidité ; - Plaques de pexiglass; - Ampoule U.V; - Plaque chauffante; - Minuteur arduino;- Pelletier ; - Servo-moteur; - Trappe; - Réservoir d'eau; - Laser/récepteur; - Proximity sensor;- module RTC;
+Dans cette séance, nous avons d'abord commencé à faire la liste de ce que nous allons avoir besois afin de faire notre terrarduino. Cette liste n'est pas définitive: - Capteur de température; capteur d'humidité ; - Plaques de pexiglass; - Ampoule U.V; - Plaque chauffante;- Pelletier ; - Servo-moteur; - Trappe; - Réservoir d'eau; - Laser/récepteur; - Proximity sensor;- module RTC;
 
 Nous avons déjà le capteur de température, le capteur d'humidité, le peletier, le servo-moteur, le module RTC , le laser/récepteur et le proximity sensor.
 
