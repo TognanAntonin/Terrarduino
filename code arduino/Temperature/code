@@ -16,6 +16,8 @@ dht.begin();
 void loop() {
 h = dht.readHumidity();
 t = dht.readTemperature();
+float hic = dht.computeHeatIndex(t,h,false);
+
 if (isnan(t) || isnan(h)) {
   Serial.println("Lecture impossible!");
 }
@@ -26,7 +28,11 @@ else {
   Serial.print("Température :");
   Serial.print(t);
   Serial.println(" *C");
+  Serial.print("Indice de temp. : ");
+  Serial.print(hic);
+  Serial.println(" *C");
 }
 delay(1000);
 
 }
+
