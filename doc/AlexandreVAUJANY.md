@@ -8,5 +8,10 @@ Compte-rendu de la séance du 12 janvier 2018
 J'ai créé un emploi du temps afin que l'on se fixe pour faire différentes tâches de ce projet. Ensuite, j'ai fait des recherches pour voir quels types de capteurs utiliser et dans quel but. Enfin j'ai fait des recherches sur des matériaux utilisables dont notamment le plexiglas pour voir quels étaient ses avantages et ses inconvénients. 
 
 
+Compte-rendu de la séance du 19 janvier 2018
+
+Je me suis principalement concentré sur le fait de noter les idées principales de notre projet afin de préparer le diaporama pour notre oral. Au final, j'ai bien avancé mais je n'ai pas eu le temps de finir car certaines parties des critères à respecter pour la présentation m'ont posé des problèmes de compréhension et j'ai donc perdu du temps à essayer de bien comprendre ce qu'il fallait faire.
+
+
 
 
