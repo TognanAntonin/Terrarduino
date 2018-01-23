@@ -12,7 +12,8 @@ Une équipe composée de trois personnes:
 * McGannon Sean 
 * Tognan Antonin
 
-# Problématique: Comment permettre aux reptiles de vivre en autonomie dans un terrarium?
+# Problématique: 
+# Comment permettre aux reptiles de vivre en autonomie dans un terrarium?
 
 
 # Description du projet
