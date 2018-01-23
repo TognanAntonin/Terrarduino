@@ -23,6 +23,10 @@ selon l'espèce de reptile mis dans le terrarium.
 Le terrarduino est fait afin qu'un reptile puisse vivre dans le terrarium sans que nous aillons besoins de nous en occuper.
 Pour cela, nous voulons créer une base de données avec de nombreuses informations sur les principaux reptiles qui existent en captivité afin qu'en choisissant dans la base de données l'espèce d'un reptile, il puisse vivre sans que nous aillons trop à nous renseigner sur lui ou que nous puissions partir en vacances sans faire appel à quelqu'un pour qu'il s'en occupe.
 
+
+![Terrarium](http://www.nouvellestechnologies.net/images/b/bio/biopod-diapo-2.jpg)
+
+
 # Matériel utilisé
 
 - Capteur de température/humidité (ok);
