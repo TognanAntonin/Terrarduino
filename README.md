@@ -49,4 +49,6 @@ Pour cela, nous voulons créer une base de données avec de nombreuses informati
 Toutes personnes possédant un reptile.
 En effet, lorsque nous possédons un reptile, il est compliqué d'en prendre soin et cela prend énormément de temps.
 Grâce à ce projet, nous pourrons toucher toutes les personnes ayant un ou plusieurs reptiles chez eux.
+Ce projet, possède une vraie clientèle. Il pourrait créer une idée d'entreprise créant et revendant des terrariums connectés.
+
 
