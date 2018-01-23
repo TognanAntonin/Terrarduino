@@ -1,1 +1,43 @@
-Test
+#include "DHT.h"   // Librairie des capteurs DHT
+#define DHTPIN 8   // pin sur lequel est branché le DHT
+#define DHTTYPE DHT11       // DHT 11  (AM2302)
+
+DHT dht(DHTPIN, DHTTYPE); 
+
+float h = 0;
+float t = 0;
+
+void setup() {
+Serial.begin(9600);
+dht.begin();
+
+}
+
+void loop() {
+h = dht.readHumidity();
+t = dht.readTemperature();
+float hic = dht.computeHeatIndex(t,h,false);
+
+if (isnan(t) || isnan(h)) {
+  Serial.println("Lecture impossible!");
+}
+else {
+  Serial.print("Humidité : ");
+  Serial.print(h);
+  Serial.print(" %\t");
+  Serial.print("Température :");
+  Serial.print(t);
+  Serial.println(" *C");
+  Serial.print("Indice de temp. : ");
+  Serial.print(hic);
+  Serial.println(" *C");
+}
+
+// faire les conditions selon les reptiles en question
+// faire les conditions selon les données recues par les capteurs.
+
+
+delay(1000);
+
+}
+
