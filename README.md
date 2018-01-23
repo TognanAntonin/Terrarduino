@@ -30,12 +30,13 @@ Pour cela, nous voulons créer une base de données avec de nombreuses informati
 - Ampoule U.V;
 - Plaque chauffante;
 - Module RTC;
-- Peltier + radiateur (condensation); ok pelletier
-- Servo-moteur;
+- Radiateur (condensation); 
+- Peltier (ok);
+- Servo-moteur (ok);
 - Trappe;
 - Reservoir d'eau;
-- Laser/récepteur;
-- Proximity sensor;
+- Laser/récepteur (ok);
+- Proximity sensor (ok);
 - Brumisateur;
 - Pompe;
 
