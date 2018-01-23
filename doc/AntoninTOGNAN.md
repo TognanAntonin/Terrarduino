@@ -109,5 +109,11 @@ Pour notre boîte, nous prendrons des dimensions assez petites. Les dimensions p
 
 -Largeur :250 mm; Profondeur : 250 mm, Hauteur : 300 mm ,Épaisseur du matériau : l'épaisseur de la plaque de plexiglass que nous allons recevoir.
 
+* Séance du 19 Janvier 2018:
 
+Lors de cette séance, j'ai tout d'abord commencé à envoyer à Mr.Masson une liste avec les achats à faire afin de créer notre Terrarduino.
+Ensuite, j'ai continué notre README afin de le rendre plus détaillé.
+Finalement, je me suis penché sur le module RTC et son programme.
+
+* Séance du 23 Janvier 2018:
 
