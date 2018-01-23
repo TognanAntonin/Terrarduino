@@ -10,7 +10,13 @@ J'ai créé un emploi du temps afin que l'on se fixe pour faire différentes tâ
 
 Compte-rendu de la séance du 19 janvier 2018
 
-Je me suis principalement concentré sur le fait de noter les idées principales de notre projet afin de préparer le diaporama pour notre oral. Au final, j'ai bien avancé mais je n'ai pas eu le temps de finir car certaines parties des critères à respecter pour la présentation m'ont posé des problèmes de compréhension et j'ai donc perdu du temps à essayer de bien comprendre ce qu'il fallait faire.
+Je me suis principalement concentré sur le fait de noter les idées principales de notre projet afin de préparer le diaporama pour notre oral. Au final, j'ai bien avancé mais je n'ai pas eu le temps de finir car certaines parties des critères à respecter pour la présentation m'ont posé des problèmes de compréhension et j'ai donc perdu du temps à essayer de bien comprendre ce qu'il fallait faire.01
+
+
+Compte-rendu de la séance du 23 janvier 2018
+
+Durant la première partie de séance, j'ai fait avec mes coéquipiers la soutenance orale de projet. Je me suis ensuite concentré à faire des recherches sur le module peltier. Un exemple de fonctionnement et d'explication m'a aidé à comprendre comment cela marche.
+Voici le lien: https://forum.snootlab.com/viewtopic.php?f=38&t=1147
 
 
 
