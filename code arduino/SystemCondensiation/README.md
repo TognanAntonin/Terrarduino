@@ -1,0 +1,1 @@
+Notre système de condensiation sera composé d'un radiateur et d'un peltier. Les données seront récupérées par les capteur de température/humidité et ces données mettront en marche le système radiateur + peltier et ainsi gérer l'humiditer.
