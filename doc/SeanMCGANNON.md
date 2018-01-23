@@ -42,3 +42,9 @@ Entry 19/01/18:
 
 Les code et les branchements pour la trappe (laser-recepteur + servomoteur), le capteur temperature-humidity ont été resolu et corrigé.
 Nous avons des petits problèmes pour ajouter les librairies.
+
+
+Entry 23/01/18:
+
+research done for the cooling system
+peltier + radiateur + ventilo maybe
