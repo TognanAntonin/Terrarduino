@@ -36,6 +36,7 @@ Pour cela, nous voulons créer une base de données avec de nombreuses informati
 - Module RTC;
 - Radiateur (condensation); 
 - Peltier (ok);
+- Transistor pour peltier + radiateur;
 - Servo-moteur (ok);
 - Trappe;
 - Reservoir d'eau;
