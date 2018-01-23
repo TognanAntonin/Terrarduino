@@ -24,11 +24,19 @@ Pour cela, nous voulons créer une base de données avec de nombreuses informati
 
 # Matériel utilisé
 
-* Module RTC 
-* Laser/récepteur
-* Pelletier
-*  Servo-moteur
-*
+- Capteur de température/humidité (ok);
+- Plaques de pexiglasse (parois);
+- Ampoule U.V;
+- Plaque chauffante;
+- Module RTC;
+- Peltier + radiateur (condensation); ok pelletier
+- Servo-moteur;
+- Trappe;
+- Reservoir d'eau;
+- Laser/récepteur;
+- Proximity sensor;
+- Brumisateur;
+- Pompe;
 
 # Population ciblée
 
