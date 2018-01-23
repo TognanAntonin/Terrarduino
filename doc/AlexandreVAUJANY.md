@@ -17,6 +17,7 @@ Compte-rendu de la séance du 23 janvier 2018
 
 Durant la première partie de séance, j'ai fait avec mes coéquipiers la soutenance orale de projet. Je me suis ensuite concentré à faire des recherches sur le module peltier. Un exemple de fonctionnement et d'explication m'a aidé à comprendre comment cela marche.
 Voici le lien: https://forum.snootlab.com/viewtopic.php?f=38&t=1147
+
 Puis Mr Masson nous a distribué un système composé d'un radiateur et d'un peltier qui va nous permettre de créer un programme avec un transistor et le capteur de température pour que le peltier distribue l'air nécessaire dans le terrarium.
 
 
