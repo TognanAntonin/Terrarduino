@@ -21,5 +21,10 @@ Voici le lien: https://forum.snootlab.com/viewtopic.php?f=38&t=1147
 Puis Mr Masson nous a distribué un système composé d'un radiateur et d'un peltier qui va nous permettre de créer un programme avec un transistor et le capteur de température pour que le peltier distribue l'air nécessaire dans le terrarium.
 
 
+# Compte-rendu de la séance du 06 février 2018
+
+Je me suis mis d'accord avec mes coéquipiers pour qu'on prenne rendez-vous vendredi au FabLab afin d'aller découper nos plaques de plexiglas que l'on aura reçu d'ici là au laser.
+J'ai ensuite fait des recherches sur le module rtc. Je pensais faire un montage entre ce module, l'écran lcd et  l'arduino pour que le décompte et la date soient affichés sur l'écran lcd avant qu'on le remplace plus tard par un écran de dimension à peu près égale à l'écran d'un téléphone portable.
+
 
 
