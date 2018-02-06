@@ -117,3 +117,7 @@ Finalement, je me suis penché sur le module RTC et son programme.
 
 * Séance du 23 Janvier 2018:
 
+Dans cette séance, nous avons tout d'abord observer nos camarades de classes passer à l'oral afin de présenter leur projet,qui pour certains été très réfléchi et inédit. Puis ce fut à notre tour de passer.Après notre passage, les heures était déjà bien avancé et nous nous sommes penché Sean et moi sur le module RTC mais après une heure de travail dessus nous n'avions pas encore réussi à régler notre problème.
+
+* Séance du 6 Février 2018:
+Dans cette séance, j'ai tout d'abord pris rendez-vous pour que nous puissions avec notre équipe allé au FabLab afin de pouvoir découper notre Terrarium provisoir dans des plaques de Plexiglas.Ensuite j'ai réussi à trouver une bande de LED afin de créer notre éclairage.
