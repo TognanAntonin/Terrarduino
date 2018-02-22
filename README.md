@@ -30,10 +30,10 @@ Pour cela, nous voulons créer une base de données avec de nombreuses informati
 # Matériel utilisé
 
 - Capteur de température/humidité (ok);
-- Plaques de pexiglasse (parois);
-- Ampoule U.V;
+- Plaques de pexiglasse (ok);
+- Ampoule U.V(LED pour l'instant);
 - Plaque chauffante;
-- Module RTC;
+- Module RTC(ok);
 - Radiateur (condensation); 
 - Peltier (ok);
 - Transistor pour peltier + radiateur;
