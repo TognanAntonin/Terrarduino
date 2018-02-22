@@ -121,3 +121,7 @@ Dans cette séance, nous avons tout d'abord observer nos camarades de classes pa
 
 * Séance du 6 Février 2018:
 Dans cette séance, j'ai tout d'abord pris rendez-vous pour que nous puissions avec notre équipe allé au FabLab afin de pouvoir découper notre Terrarium provisoir dans des plaques de Plexiglas.Ensuite j'ai réussi à trouver une bande de LED afin de créer notre éclairage.
+
+* Séance du 22.02
+
+Mail Masson pour achat matériel
