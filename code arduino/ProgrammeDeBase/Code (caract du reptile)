@@ -1,1 +1,133 @@
+#include "DHT.h"   // Librairie des capteurs DHT
+#define DHTPIN 8   // pin sur lequel est branché le DHT
+#define DHTTYPE DHT11       // DHT 11  (AM2302)
+
+//Premiere fonction :
+float poids;
+String genre;  // M pour male et F pour femelle
+int age;
+String espece; // 1 = Pogona Vitticeps / 2 = Caméléon casque du Yémen / 3 = gecko léopard
+byte SerialOK = 0;
+//Deuxieme fonction :
+DHT dht(DHTPIN, DHTTYPE); 
+float temp;
+float hum;
+
+void setup() {
+  //  SoftwareSerial mySerial(8,9);   // entree 8 : reception et entree 9 : transmission
+  //  mySerial.begin(4800);
+  Serial.begin(9600);
+
+
+// Caracteristiqures physique du reptile
+//________________________________________________________________________________________________________
+
+// PROBLEME serial.read ne prend qu'un seul caractere a la fois
+
+//// => setting for age : 
+  Serial.println("Veuillez saisir l'age du reptile");
+  while(SerialOK == 0) { 
+    if (Serial.available()) {
+      delay(5);    
+      int var = Serial.read();
+//      if(var == nombre entier) {
+       age = var - 48;
+       Serial.print("age = ");          // unecessary
+       Serial.println(age);             // unecessary
+//     }  
+//      else {
+//         Serial.println(" Erreure en rentrant l'age! ");
+//      }
+    SerialOK += 1;
+    }
+  }
+  
+  SerialOK = 0;
+  
+// => setting for weight : 
+  Serial.println("Veuillez saisir le poids du reptile");
+  while(SerialOK == 0) { 
+    if (Serial.available() > 0) {
+      delay(5);    
+      float var = Serial.read();
+//      if(var == nombre entier) {
+       poids = var - 48;
+       Serial.print("poids = ");          // unecessary
+       Serial.println(poids);             // unecessary
+//     }  
+//      else {
+//         Serial.println(" Erreure en rentrant le poids! ");
+//      }
+    SerialOK += 1;
+    }
+  }
+
+  SerialOK = 0;
+
+// => setting gender  
+  Serial.println("Veuillez saisir le genre du reptile");
+  while(SerialOK == 0) {
+    if (Serial.available() > 0) {
+      delay(5);
+      int c = Serial.read();
+      if ((c == 'M') || (c == 'm')) {
+        genre = "Male";
+        Serial.println(genre);   // unecessary
+        SerialOK += 1;         
+       }
+       else if ((c == 'F') || (c == 'f')) {
+        genre = "Femelle";
+        Serial.println(genre);  // unecessary
+        SerialOK += 1; 
+       }
+       else {
+        Serial.println("Erreure en rentrant le genre!");
+       }
+    }
+  }
+
+  SerialOK = 0;
+
+// => setting specie : 1 = Pogona Vitticeps / 2 = Caméléon casque du Yémen / 3 = gecko léopard 
+  Serial.println("Veuillez saisir l'espece du reptile");
+  int num = 0;
+  while(SerialOK == 0) {
+    if (Serial.available() > 0) {
+      delay(5);
+      num = Serial.read();
+      if (num == '1') {
+        espece = "Pogona Vitticeps";
+        Serial.println(espece);   // unecessary
+       }
+       else if (num == '2') {
+        espece = "Caméléon casque du Yémen";
+        Serial.println(espece);  // unecessary
+       }
+       else if (num == '3'){
+        espece = "Gecko Léopard";
+        Serial.println(espece);  // unecessary
+       }
+       else {
+        Serial.println("Erreure en rentrant l'espece!");
+       }
+      SerialOK += 1; 
+    }
+  }
+
+  Serial.print("Le reptile est un "); 
+  Serial.print(espece);
+  Serial.print(" de genre ");
+  Serial.print(genre);
+  Serial.print(" de ");
+  Serial.print(age);
+  Serial.print(" ans et pèse ");
+  Serial.print(poids);
+  Serial.println(" kilo.");
+}
+
+// Caracteristiqures du milieu de vie du reptile
+//________________________________________________________________________________________________________
+
+ void loop() {
+ }
 
