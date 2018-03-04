@@ -48,3 +48,13 @@ Entry 23/01/18:
 
 research done for the cooling system
 peltier + radiateur + ventilo maybe
+
+
+Entry 04/03/18:
+
+Apres un mois à être coince sur le même programme, qui est celui permettant de rentrer les differentes caraftéristiques du réptile dans l'arduino afin de régler le milieu du terrarium (temperature, humidit, nourriture etc...) pour la bonne espece choisie, j'ai reussi a faire fonctionner le programme selon les donnees que rentrent l'utilisateur. 
+Il y a un probleme : serial.read ne prend qu'un seul caractere à la fois étant problematique pour rentrer le poid et l'age si ces derniers étant superieurs a 9.
+Le programme peut aussi diminuer l'humidite du milieu (en theorie grace au peltier). Je n'ai pas les reste du materiel me permettant controler la temperature (l'augmenter en utilisant la plaque chauffante ou l'ampoule ou la diminuer juste en eteignant ces derniers ou en aerant grâce a un ventilateur => pas encore décider sur cet aspect), le cycle lumineux (les bandes de led ne sont pas encore prete), la nourriture (il nous manque la trappe), l'eau (pas de pompe ou de reservoire) et enfin il me manque pour le moment le brumisateur permettant d'augmenter l'humidite du milieu.
+
+A faire: - la distribution de la nourriture selon l'espece, le genre, le poids et son age;
+- decouvrir le probleme avec le peltier: lorsqu'il est branché au vdd et la masse directement, on remarque une grande difference de temperature entre les 2 surfaces du peltier nous indiquant que ce dernier fonctionne. Mais lorsque je le branche sur une entree, qui se met sur la masse lorsque l'humidite depasse un certain nombre, le peltier n'a pas l'air de fonctionner (h > nbre en question). WHYYYY???
