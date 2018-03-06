@@ -63,3 +63,4 @@ Donc voila ce qu'il nous manque: plaque chauffante, trappe, reservoir d'eau, bru
 J'ai ajouté au programe permettant de regler notre futur terrarduino, de quoi nourrir et gerer la temperature. Mais pas pu les tester a cause de l'absence du materiel besoin. Implements aux bases de données des informations reliees a l'alimentation de nos futurs locataires.
 
 IDEA to discuss with the others: un systeme mecanique simpliste permettant aux utilisateurs de regler la taille du terrarium permettant de l'adapter selon les caracteristiques du reptile.
+https://www.youtube.com/watch?v=FJHpl_x9Z8o => raw idea
