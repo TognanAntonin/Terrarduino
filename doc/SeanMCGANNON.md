@@ -6,7 +6,7 @@ Terrarduino
 
 Mon équipe de travail est composé de moi-même (MCGANNON Sean), VAUJANY Alexandre et TOGNAN Antonin.
 
-Entry 20/12/17: 
+> Entry 20/12/17: 
 
 Dans cette première séance, après avoir créer notre trinôme, nous nous sommes mis d'accord de faire un projet en rapport avec les animaux et la vie en général : le Terranium autonome.
 
@@ -14,7 +14,7 @@ Grâce à ce projet, nous spéculons que nous apprendrons énormement de choses 
 
 Nous avons donc commencer à chercher ce que nous aurons besoin afin d'amener a bien notre projet. C'est-à-dire, le matériel que nous pourrions avoir besoin, une base de donnée à créer avec toutes les caractéristiques des reptiles les plus achetés et "hébergés" dans les terranium. Ses informations seront capitales afin de leur recréer un milieu de vie optimal.
 
-Entry 12/01/18:
+> Entry 12/01/18:
 
 Voici une première lister qui va évolué tout au long des projets:
 - Capteur de température/humidité (ok);
@@ -35,17 +35,17 @@ J'ai aussi commencer à chercher les codes uties a faire marcher les composants 
 
 Le peltier va servir au refroidissment du milieu quand cela sera nécessaire. Regarder la méthode de branchement to do!
 
-Entry 19/01/18:
+> Entry 19/01/18:
 
 Les code et les branchements pour la trappe (laser-recepteur + servomoteur), le capteur temperature-humidity ont été resolu et corrigé.
 Nous avons des petits problèmes pour ajouter les librairies.
 
-Entry 23/01/18:
+> Entry 23/01/18:
 
 research done for the cooling system
 peltier + radiateur + ventilo maybe
 
-Entry 04/03/18:
+> Entry 04/03/18:
 
 Apres un mois à être coince sur le même programme, qui est celui permettant de rentrer les differentes caraftéristiques du réptile dans l'arduino afin de régler le milieu du terrarium (temperature, humidit, nourriture etc...) pour la bonne espece choisie, j'ai reussi a faire fonctionner le programme selon les donnees que rentrent l'utilisateur. 
 Il y a un probleme : serial.read ne prend qu'un seul caractere à la fois étant problematique pour rentrer le poid et l'age si ces derniers étant superieurs a 9.
@@ -57,3 +57,9 @@ A faire:
 
 And finally since my last serious entry : la boite prototype fait en plexiglass a ete creer.
 Donc voila ce qu'il nous manque: plaque chauffante, trappe, reservoir d'eau, brumisateur et pompe.
+
+> Entry 06/03/18
+
+J'ai ajouté au programe permettant de regler notre futur terrarduino, de quoi nourrir et gerer la temperature. Mais pas pu les tester a cause de l'absence du materiel besoin. Implements aux bases de données des informations reliees a l'alimentation de nos futurs locataires.
+
+IDEA to discuss with the others: un systeme mecanique simpliste permettant aux utilisateurs de regler la taille du terrarium permettant de l'adapter selon les caracteristiques du reptile.
