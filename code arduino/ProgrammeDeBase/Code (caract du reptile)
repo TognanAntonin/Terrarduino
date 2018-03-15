@@ -10,8 +10,16 @@ String espece; // 1 = Pogona Vitticeps / 2 = Caméléon casque du Yémen / 3 = g
 byte SerialOK = 0;
 //Deuxieme fonction :
 DHT dht(DHTPIN, DHTTYPE); 
-float temp;
-float hum;
+float t;
+float tempMax;  // point chaud
+float tempMin;  // point froid
+float tempNuit;  // temp de nuit
+float h;
+float humMax;   // humidite minimale
+float humMin;   // humidite maximale
+float lumiere;   // cycle lumineux (nombre d'heures de lumieres)
+int grillon;    // depend du poids sex age 
+int peltier = 2;
 
 void setup() {
   //  SoftwareSerial mySerial(8,9);   // entree 8 : reception et entree 9 : transmission
@@ -23,6 +31,8 @@ void setup() {
 //________________________________________________________________________________________________________
 
 // PROBLEME serial.read ne prend qu'un seul caractere a la fois
+// pas un probleme pour l'age car longetivite du 1) : 5 à 10 ans; du 2) : 3 a 5 ans;
+// pour le 3 oui, longetivite +15ans
 
 //// => setting for age : 
   Serial.println("Veuillez saisir l'age du reptile");
@@ -123,11 +133,98 @@ void setup() {
   Serial.print(" ans et pèse ");
   Serial.print(poids);
   Serial.println(" kilo.");
-}
 
 // Caracteristiqures du milieu de vie du reptile
 //________________________________________________________________________________________________________
+dht.begin();
+pinMode(peltier,OUTPUT);
+digitalWrite(peltier,HIGH);
+}
 
  void loop() {
- }
+h = dht.readHumidity();
+t = dht.readTemperature();
+float hic = dht.computeHeatIndex(t,h,false);
 
+if (isnan(t) || isnan(h)) {
+  Serial.println("Lecture impossible!");
+}
+else {
+  Serial.print("Humidité : ");
+  Serial.print(h);
+  Serial.print(" %\t");
+  Serial.print("Température :");
+  Serial.print(t);
+  Serial.println(" *C");
+  Serial.print("Indice de temp. : ");
+  Serial.print(hic);
+  Serial.println(" *C");
+}
+delay(5000);
+// setting criterias
+// 1) Pagona
+if(espece == "Pogona Vitticeps") {
+  tempMax = 47;
+  tempMin = 26;
+  tempN = 22;
+  humMax = 60;
+  humMin = 40;
+  lumiere = 12;
+  // grillon = 5;
+// => setting humility  
+  if(hum > humMax) {
+    digitalWrite(peltier,LOW);
+  }
+  else if(hum < humMin) {
+    // activer brumisateur
+  }
+// => setting temp
+if (t < tempMin){
+  // Sortie de la plaque chauffante sur LOW
+}
+else if (t > tempMax) {
+  // Sortie de la plaque chauffante sur HIGH
+}
+// => setting food
+// => setting lighting
+// => setting water  
+}
+
+// 2) Cameleon
+else if(espece == "Caméléon casque du Yémen") {
+  tempMax = 37;
+  tempMin = 25;
+  tempN = 21;
+  humMax = 60;
+  humMin = 40;
+  lumiere = 12;
+  // grillon = 4; every 2 days
+// => setting humility  
+  if(hum > humMax) {
+    digitalWrite(peltier,LOW);
+  }
+  else if(hum < humMin) {
+    // activer brumisateur
+  }
+}
+
+// 3) gecko léopard
+else if(espece == "Gecko Léopard") {
+  tempMax = 34;
+  tempMin = 25;
+  tempN = 22;
+  humMax = 60;
+  humMin = 40;
+  lumiere = 12;
+  // grillon = 2 tous les jours
+// => setting humility  
+  if(hum > humMax) {
+    digitalWrite(peltier,LOW);
+  }
+  else if(hum < humMin) {
+    // activer brumisateur
+  }
+}
+
+
+}
