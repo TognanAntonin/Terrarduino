@@ -27,4 +27,14 @@ Je me suis mis d'accord avec mes coéquipiers pour qu'on prenne rendez-vous vend
 J'ai ensuite fait des recherches sur le module rtc. Je pensais faire un montage entre ce module, l'écran lcd et  l'arduino pour que le décompte et la date soient affichés sur l'écran lcd avant qu'on le remplace plus tard par un écran de dimension à peu près égale à l'écran d'un téléphone portable.
 
 
+# Compte-rendu de la séance du 22 février 2018
+
+Durant cette séance, j'ai commencé à faire des recherches sur comment faire l'application qui contrôlerait notre terrarium puis j'ai finalement pensé au fait que l'on utilise l'application Bluetooth Electronics que nous avions utilisé avec Mr Ferrero pendant les cours sur le Bluetooth lors du premier semestre.
+Enfin j'ai commencé le montage que j'avais envisagé lors de la séance précédente entre le module rtc, l'écran lcd et l'arduino mais il ne marche pas à cause de l'arduino qui me met un message d'erreur sur le port 3 de l'arduino. 
+
+
+# Compte-rendu de la séance du 15 mars 2018
+
+J'ai eu le même problème pendant les vacances que lors de la dernière séance de projet mais Mr Ferrero a basculé ma carte Arduino sur le port 7. De plus je me suis rendu compte que mon montage n'était pas le bon, j'avais oublié de mettre un potentiomètre reliéà l'entrée 3 de mon écran LCD.
+Je dois finir chez moi d'ici la prochaine séance.
 
