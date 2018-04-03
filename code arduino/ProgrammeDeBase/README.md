@@ -1,5 +1,6 @@
-Ceci est le programme qui va permettre d'appliquer les differents réglages selon le reptile que choisira le propriétaire de ce dernier. 
-Pour commencer faudra mettre en place les termperatures et les taux d'humidité.
+Ceci est le programme permet d'appliquer les differents réglages aux terrarium selon le reptile que choisira le propriétaire. 
+Pour commencer, il faut mettre en place les termperatures et les taux d'humidité.
+
 A faire: 
 - un programme permettant a l utilisateur de donner les caracteristiques du reptile en question (sexe, age, poids).
 - un programme permettant a l'utilisateur de mettre des caractéristiques peronnalisées
