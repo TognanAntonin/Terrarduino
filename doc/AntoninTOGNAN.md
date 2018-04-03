@@ -120,8 +120,21 @@ Finalement, je me suis penché sur le module RTC et son programme.
 Dans cette séance, nous avons tout d'abord observer nos camarades de classes passer à l'oral afin de présenter leur projet,qui pour certains été très réfléchi et inédit. Puis ce fut à notre tour de passer.Après notre passage, les heures était déjà bien avancé et nous nous sommes penché Sean et moi sur le module RTC mais après une heure de travail dessus nous n'avions pas encore réussi à régler notre problème.
 
 * Séance du 6 Février 2018:
-Dans cette séance, j'ai tout d'abord pris rendez-vous pour que nous puissions avec notre équipe allé au FabLab afin de pouvoir découper notre Terrarium provisoir dans des plaques de Plexiglas.Ensuite j'ai réussi à trouver une bande de LED afin de créer notre éclairage.
+Dans cette séance, j'ai tout d'abord pris rendez-vous pour que nous puissions avec notre équipe allé au FabLab afin de pouvoir découper notre Terrarium provisoir dans des plaques de Plexiglas.Ensuite j'ai réussi à trouver une bande de LED afin de créer notre éclairage et j'ai ensuite fais des recherche dessus pour le branchage et le code.
 
-* Séance du 22.02
+* Séance du 22 Février 2018:
 
-Mail Masson pour achat matériel
+Recherche du matériels qu'ils nous fallaient sur internet, puis j'ai envoyé un Mail à Monsieur Masson afin de pouvoir avoir le reste de notre matériel afin de continué le projet.
+Puis j'ai recommencé les recherches et le codage sur le module RTC.
+
+* Séance du Jeudi 15 Mars 2018:
+
+Dans cette séance, nous avons tout d'abord réceptionnés le matériels puis j'ai commencé le soudage pour la pompe, le  moteur et la bande de LED.Cela m'a pris énormément de temps parceque je suis novice dans le soudage. Puis j'ai aidé Sean McGannon dans certaines lignes de code.
+
+* Séance du Mardi 27 Mars 2018:
+
+Dans cette séance, nous avons reçu tout le matériel que nous voullions. Ainsi, nous pouvons voir ce que notre projet va donner. 
+Lors de cette séance, je me suis renseigné sur la manière de créé une application pour notre projet. Mais cela demande un bon niveau dans le codage en JAVA. ce que nous n'avons pas dans notre groupe de travail . je me suis donc renseigné sur certaines  autres éventuallitées.
+
+* Entre séance su Mardi 27 Mars et Mercredi 4 Avril : 
+Avec Alexandre Vaujany , nous avons préparé le "compte rendu" pour le passage à l'oral du Mercredi 4 Avril. Et cela m'a donné certaines idées pour la suite de notre projet .
