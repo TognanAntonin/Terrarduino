@@ -43,3 +43,8 @@ Je dois finir chez moi d'ici la prochaine séance.
 
 Ayant enfin fini mon montage après m'être rendu compte de mes erreurs et vérifié que tout marche pendant le week-end, j'ai regardé les présentations des autres groupes puis j'ai commencé le diaporama pour notre présentation de la semaine prochaine.
 
+
+#  Compte-rendu de la séance du 27 mars 2018
+
+Nous avons fait notre présentation de mi-parcours de projet, puis j'ai fait des recherches sur le fonctionnement et les caractéristiques techniques du brumisateur ultrason.
+
