@@ -35,6 +35,11 @@ Enfin j'ai commencé le montage que j'avais envisagé lors de la séance précé
 
 # Compte-rendu de la séance du 15 mars 2018
 
-J'ai eu le même problème pendant les vacances que lors de la dernière séance de projet mais Mr Ferrero a basculé ma carte Arduino sur le port 7. De plus je me suis rendu compte que mon montage n'était pas le bon, j'avais oublié de mettre un potentiomètre reliéà l'entrée 3 de mon écran LCD.
+J'ai eu le même problème pendant les vacances que lors de la dernière séance de projet mais Mr Ferrero a basculé ma carte Arduino sur le port 7. De plus je me suis rendu compte que mon montage n'était pas le bon, j'avais oublié de mettre un potentiomètre relié à l'entrée 3 de mon écran LCD.
 Je dois finir chez moi d'ici la prochaine séance.
+
+
+# Compte-rendu de la séance du 27 mars 2018
+
+Ayant enfin fini mon montage après m'être rendu compte de mes erreurs et vérifié que tout marche pendant le week-end, j'ai regardé les présentations des autres groupes puis j'ai commencé le diaporama pour notre présentation de la semaine prochaine.
 
