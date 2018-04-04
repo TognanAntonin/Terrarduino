@@ -82,7 +82,8 @@ Vidéo informative:https://www.youtube.com/watch?v=_wPS-2LxegA
 
 Fiche technique: http://www.lftshop.com/site/medias/fiches/geckoleopard.jpg
 
-La quantité de nourriture que nous devons leurs données est très aléatoire selon l'âge, le sexe, la taille ...
+
+* La quantité de nourriture que nous devons leurs données est très aléatoire selon l'âge, le sexe, la taille ...
 
 * Séance du 12 Janvier 2018 :
 
@@ -136,5 +137,12 @@ Dans cette séance, nous avons tout d'abord réceptionnés le matériels puis j'
 Dans cette séance, nous avons reçu tout le matériel que nous voullions. Ainsi, nous pouvons voir ce que notre projet va donner. 
 Lors de cette séance, je me suis renseigné sur la manière de créé une application pour notre projet. Mais cela demande un bon niveau dans le codage en JAVA. ce que nous n'avons pas dans notre groupe de travail . je me suis donc renseigné sur certaines  autres éventuallitées.
 
-* Entre séance su Mardi 27 Mars et Mercredi 4 Avril : 
+* Entre séance su Mardi 27 Mars et Mercredi 4 Avril :
+
 J'ai préparé le "compte rendu" pour le passage à l'oral du Mercredi 4 Avril. Et cela m'a donné certaines idées pour la suite de notre projet .
+
+* Séance su 4 Avril 2018
+
+Dans cette séance, nous sommes passé à l'oral avec mon groupe.Ensuite nous nous sommes penché sur le relais avec Sean McGannon .
+J'ai ensuite fini par quelques recherches sur le UCA board.
+
