@@ -137,4 +137,4 @@ Dans cette séance, nous avons reçu tout le matériel que nous voullions. Ainsi
 Lors de cette séance, je me suis renseigné sur la manière de créé une application pour notre projet. Mais cela demande un bon niveau dans le codage en JAVA. ce que nous n'avons pas dans notre groupe de travail . je me suis donc renseigné sur certaines  autres éventuallitées.
 
 * Entre séance su Mardi 27 Mars et Mercredi 4 Avril : 
-Avec Alexandre Vaujany , nous avons préparé le "compte rendu" pour le passage à l'oral du Mercredi 4 Avril. Et cela m'a donné certaines idées pour la suite de notre projet .
+J'ai préparé le "compte rendu" pour le passage à l'oral du Mercredi 4 Avril. Et cela m'a donné certaines idées pour la suite de notre projet .
