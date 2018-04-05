@@ -64,3 +64,7 @@ J'ai ajouté au programe permettant de regler notre futur terrarduino, de quoi n
 
 IDEA to discuss with the others: un systeme mecanique simpliste permettant aux utilisateurs de regler la taille du terrarium permettant de l'adapter selon les caracteristiques du reptile.
 https://www.youtube.com/watch?v=FJHpl_x9Z8o => raw idea
+
+> Entry 04/04/18
+
+Nous avons à présent pratiquement tout le materiel besoin pour le projet. Le probleme mtn est de gerer les composants branchés sur le 12V grace aux relais. 
