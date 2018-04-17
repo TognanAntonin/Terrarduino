@@ -1,0 +1,70 @@
+#include "DHT.h"   // Librairie des capteurs DHT
+#define DHTPIN 2   // pin sur lequel est branché le DHT
+#define DHTTYPE DHT11       // DHT 11  (AM2302)
+
+DHT dht(DHTPIN, DHTTYPE); 
+
+float h = 0;
+float t = 0;
+const int radiateur = 4;   // relai pour le radiateur => humidite
+const int plaque = 3;      // relai pour la plaque chauffante => temperature
+const int brumisateur = 5; // relai pour le brumisateur => humidite
+float tmax = 40;
+float tmin = 20;
+float hmax = 30;
+float hmin = 20;
+
+void setup() {
+Serial.begin(9600);
+dht.begin();
+pinMode(radiateur,OUTPUT);
+pinMode(plaque,OUTPUT);
+pinMode(brumisateur,OUTPUT);
+digitalWrite(radiateur,HIGH); 
+digitalWrite(plaque,HIGH);
+digitalWrite(brumisateur,HIGH);
+
+}
+
+void loop() {
+  
+h = dht.readHumidity();
+t = dht.readTemperature();
+float hic = dht.computeHeatIndex(t,h,false);
+
+if (isnan(t) || isnan(h)) {
+  Serial.println("Lecture impossible!");
+} else {
+  Serial.print("Température :");
+  Serial.println(t);
+  Serial.print("Humidité : ");
+  Serial.println(h);
+}
+
+//Temperature
+if(t < tmin) {
+  Serial.println(" Too cold");
+  digitalWrite(plaque,LOW);
+} else {
+  Serial.println("All good");
+}
+
+//Humidité
+if(h < hmin) {
+  Serial.println(" Too dry!");
+  digitalWrite(brumisateur,LOW);
+  
+} else if(h > hmax) {
+  Serial.println(" Too humide!");
+  digitalWrite(radiateur,LOW);
+} else {
+  Serial.println("All good");
+  digitalWrite(radiateur,HIGH);
+  digitalWrite(brumisateur,HIGH);
+}
+
+delay(2000);
+
+}
+
+
