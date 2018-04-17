@@ -87,6 +87,7 @@ Fiche technique: http://www.lftshop.com/site/medias/fiches/geckoleopard.jpg
 
 * Séance du 12 Janvier 2018 :
 
+
 Dans cette séance, nous avons d'abord commencé à faire la liste de ce que nous allons avoir besois afin de faire notre terrarduino. Cette liste n'est pas définitive: - Capteur de température; capteur d'humidité ; - Plaques de pexiglass; - Ampoule U.V; - Plaque chauffante;- Pelletier ; - Servo-moteur; - Trappe; - Réservoir d'eau; - Laser/récepteur; - Proximity sensor;- module RTC;
 
 Nous avons déjà le capteur de température, le capteur d'humidité, le peletier, le servo-moteur, le module RTC , le laser/récepteur et le proximity sensor.
@@ -146,3 +147,8 @@ J'ai préparé le "compte rendu" pour le passage à l'oral du Mercredi 4 Avril. 
 Dans cette séance, nous sommes passé à l'oral avec mon groupe.Ensuite nous nous sommes penché sur le relais avec Sean McGannon .
 J'ai ensuite fini par quelques recherches sur le UCA board.
 
+* Séance du 17 Avril
+
+Soudure 
+Mise à jour du Github général 
+Relais 
