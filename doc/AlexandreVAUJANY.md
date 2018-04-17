@@ -48,3 +48,8 @@ Ayant enfin fini mon montage après m'être rendu compte de mes erreurs et véri
 
 Nous avons fait notre présentation de mi-parcours de projet, puis j'ai fait des recherches sur le fonctionnement et les caractéristiques techniques du brumisateur ultrason.
 
+
+# Compte-rendu de la séance du 17 avril 2018
+
+En continuant mes recherches sur le brumisateur ultrason, j'ai trouvé les bonnes caractéristiques du modèle fourni. J'ai commencé à le tester.
+
