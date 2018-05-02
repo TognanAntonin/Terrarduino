@@ -57,5 +57,5 @@ En continuant mes recherches sur le brumisateur ultrason, j'ai trouvé les bonne
 # Compte-rendu de la séance du 02 mai 2018
 
 J'ai enfin réussi à faire marcher le brumisateur ultrason. Le problème venait de l'alimentation qui n'était pas la bonne: je l'alimentais en 12V au lieu de 24V. En 24V ça marche mieux :) . 
-
+En fin de séance, j'ai commencé à faire un code qui permet l'éclairage de la led selon l'heure qu'il est à l'aide du module RTC.
 
