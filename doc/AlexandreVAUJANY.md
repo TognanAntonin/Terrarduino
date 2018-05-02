@@ -51,5 +51,11 @@ Nous avons fait notre présentation de mi-parcours de projet, puis j'ai fait des
 
 # Compte-rendu de la séance du 17 avril 2018
 
-En continuant mes recherches sur le brumisateur ultrason, j'ai trouvé les bonnes caractéristiques du modèle fourni. J'ai commencé à le tester.
+En continuant mes recherches sur le brumisateur ultrason, j'ai trouvé les bonnes caractéristiques du modèle fourni. J'ai commencé à le tester mais mes essais ne sont pas encore concluants.
+
+
+# Compte-rendu de la séance du 02 mai 2018
+
+J'ai enfin réussi à faire marcher le brumisateur ultrason. Le problème venait de l'alimentation qui n'était pas la bonne: je l'alimentais en 12V au lieu de 24V. En 24V ça marche mieux :) . 
+
 
