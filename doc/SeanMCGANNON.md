@@ -68,3 +68,7 @@ https://www.youtube.com/watch?v=FJHpl_x9Z8o => raw idea
 > Entry 04/04/18
 
 Nous avons à présent pratiquement tout le materiel besoin pour le projet. Le probleme mtn est de gerer les composants branchés sur le 12V grace aux relais. 
+
+> Entry 02/05/18
+
+Creation d'un compte Things Network: Id: Terrarduino Passwd: Terrarduino Email: seanachiketas@gmail.com
