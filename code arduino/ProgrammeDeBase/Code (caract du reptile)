@@ -8,6 +8,7 @@ String genre;  // M pour male et F pour femelle
 int age;
 String espece; // 1 = Pogona Vitticeps / 2 = Caméléon casque du Yémen / 3 = gecko léopard
 byte SerialOK = 0;
+
 //Deuxieme fonction :
 DHT dht(DHTPIN, DHTTYPE); 
 float t;
@@ -19,7 +20,10 @@ float humMax;   // humidite minimale
 float humMin;   // humidite maximale
 float lumiere;   // cycle lumineux (nombre d'heures de lumieres)
 int grillon;    // depend du poids sex age 
-int peltier = 2;
+
+const int radiateur = 4;   // relai pour le radiateur => humidite
+const int plaque = 3;      // relai pour la plaque chauffante => temperature
+const int brumisateur = 5; // relai pour le brumisateur => humidite
 
 void setup() {
   //  SoftwareSerial mySerial(8,9);   // entree 8 : reception et entree 9 : transmission
@@ -137,8 +141,12 @@ void setup() {
 // Caracteristiqures du milieu de vie du reptile
 //________________________________________________________________________________________________________
 dht.begin();
-pinMode(peltier,OUTPUT);
-digitalWrite(peltier,HIGH);
+pinMode(radiateur,OUTPUT);
+pinMode(plaque,OUTPUT);
+pinMode(brumisateur,OUTPUT);
+digitalWrite(radiateur,HIGH); 
+digitalWrite(plaque,HIGH);
+digitalWrite(brumisateur,HIGH);
 }
 
  void loop() {
@@ -171,19 +179,26 @@ if(espece == "Pogona Vitticeps") {
   humMin = 40;
   lumiere = 12;
   // grillon = 5;
-// => setting humility  
-  if(hum > humMax) {
-    digitalWrite(peltier,LOW);
-  }
-  else if(hum < humMin) {
-    // activer brumisateur
-  }
-// => setting temp
-if (t < tempMin){
-  // Sortie de la plaque chauffante sur LOW
+//Temperature
+if(t < tmin) {
+  Serial.println(" Too cold");
+  digitalWrite(plaque,LOW);
+} else {
+  Serial.println("All good");
 }
-else if (t > tempMax) {
-  // Sortie de la plaque chauffante sur HIGH
+
+//Humidité
+if(h < hmin) {
+  Serial.println(" Too dry!");
+  digitalWrite(brumisateur,LOW);
+  
+} else if(h > hmax) {
+  Serial.println(" Too humide!");
+  digitalWrite(radiateur,LOW);
+} else {
+  Serial.println("All good");
+  digitalWrite(radiateur,HIGH);
+  digitalWrite(brumisateur,HIGH);
 }
 // => setting food
 // => setting lighting
@@ -199,13 +214,27 @@ else if(espece == "Caméléon casque du Yémen") {
   humMin = 40;
   lumiere = 12;
   // grillon = 4; every 2 days
-// => setting humility  
-  if(hum > humMax) {
-    digitalWrite(peltier,LOW);
-  }
-  else if(hum < humMin) {
-    // activer brumisateur
-  }
+//Temperature
+if(t < tmin) {
+  Serial.println(" Too cold");
+  digitalWrite(plaque,LOW);
+} else {
+  Serial.println("All good");
+}
+
+//Humidité
+if(h < hmin) {
+  Serial.println(" Too dry!");
+  digitalWrite(brumisateur,LOW);
+  
+} else if(h > hmax) {
+  Serial.println(" Too humide!");
+  digitalWrite(radiateur,LOW);
+} else {
+  Serial.println("All good");
+  digitalWrite(radiateur,HIGH);
+  digitalWrite(brumisateur,HIGH);
+}
 }
 
 // 3) gecko léopard
@@ -217,13 +246,28 @@ else if(espece == "Gecko Léopard") {
   humMin = 40;
   lumiere = 12;
   // grillon = 2 tous les jours
-// => setting humility  
-  if(hum > humMax) {
-    digitalWrite(peltier,LOW);
-  }
-  else if(hum < humMin) {
-    // activer brumisateur
-  }
+  
+//Temperature
+if(t < tmin) {
+  Serial.println(" Too cold");
+  digitalWrite(plaque,LOW);
+} else {
+  Serial.println("All good");
+}
+
+//Humidité
+if(h < hmin) {
+  Serial.println(" Too dry!");
+  digitalWrite(brumisateur,LOW);
+  
+} else if(h > hmax) {
+  Serial.println(" Too humide!");
+  digitalWrite(radiateur,LOW);
+} else {
+  Serial.println("All good");
+  digitalWrite(radiateur,HIGH);
+  digitalWrite(brumisateur,HIGH);
+}
 }
 
 
