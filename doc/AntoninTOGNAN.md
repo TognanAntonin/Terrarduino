@@ -152,3 +152,12 @@ J'ai ensuite fini par quelques recherches sur le UCA board.
 Soudure 
 Mise à jour du Github général 
 Relais codage et compréhension
+
+* Séance du 2 Avril
+
+Travail sur la plaque UCA.
+Inscription Things Network.
+Plaque à chercher Vendredi !
+Test brumisateur ok
+
+
