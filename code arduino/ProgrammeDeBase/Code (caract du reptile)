@@ -50,7 +50,7 @@ void setup() {
        Serial.println(age);             // unecessary
 //     }  
 //      else {
-//         Serial.println(" Erreure en rentrant l'age! ");
+//         Serial.println(" Erreur en rentrant l'age! ");
 //      }
     SerialOK += 1;
     }
