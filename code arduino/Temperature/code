@@ -8,8 +8,8 @@ float h = 0;
 float t = 0;
 
 void setup() {
-Serial.begin(9600);
-dht.begin();
+  Serial.begin(9600);
+  dht.begin();
 }
 
 void loop() {
