@@ -107,6 +107,7 @@ J'ai cherché des générateur de boîte sur internet et nous allons utiliser ce
 
 http://carrefour-numerique.cite-sciences.fr/fablab/wiki/doku.php?id=projets:generateur_de_boites
 
+
 Pour notre boîte, nous prendrons des dimensions assez petites. Les dimensions pour un vraie terrarium doivent être largement supérieur.
 
 -Largeur :250 mm; Profondeur : 250 mm, Hauteur : 300 mm ,Épaisseur du matériau : l'épaisseur de la plaque de plexiglass que nous allons recevoir.
@@ -153,7 +154,7 @@ Soudure
 Mise à jour du Github général 
 Relais codage et compréhension
 
-* Séance du 2 Avril
+* Séance du 2 Mai
 
 Travail sur la plaque UCA.
 Inscription Things Network.
@@ -161,3 +162,6 @@ Plaque à chercher Vendredi !
 Test brumisateur ok
 
 
+* week end du 18 Mai
+
+travail avec Sean travaille sur les relais code tout mettre ensemble fablab soudure toru terrarium 
