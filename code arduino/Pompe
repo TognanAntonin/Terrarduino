@@ -1,0 +1,22 @@
+ajouter le temps
+
+float temps = 3;
+const int pompe = 2;
+
+void setup() {
+Serial.begin(9600);
+pinMode(pompe,OUTPUT);
+digitalWrite(pompe,HIGH); 
+}
+
+void loop() {
+temps= 3; // en attendant le module RTC
+if(temps==3) {
+  Serial.println("Pompe on!");
+  digitalWrite(pompe,LOW); 
+  delay(5000);
+  Serial.println("Pompe off!");
+  digitalWrite(pompe,HIGH); 
+}
+delay(3000);
+}
