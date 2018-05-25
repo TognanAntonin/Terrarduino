@@ -1,20 +1,33 @@
-#include <LiquidCrystal.h>
+//A retester
 #include <DS1302.h>
 
 // Init the DS1302
-DS1302 rtc(2, 3, 4);
-
+DS1302 rtc(3,4,5);
+const int LED=2;
+Time t;
 void setup() {
   // put your setup code here, to run once:
   rtc.halt(false);
   rtc.writeProtect(false);
-
-    // The following lines can be commented out to use the values already stored in the DS1302
-  rtc.setDOW(SUNDAY);
-  rtc.setTime(17, 35, 0);     // Mettre l'heure actuel
+  pinMode(LED,OUTPUT);
+  Serial.begin(9600);
+    
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  t = rtc.getTime();
+  Serial.println(rtc.getTimeStr()); 
+  delay(5000); 
+  if ((t.hour > 07) && (t.hour < 19))
+  {
+    digitalWrite(LED, LOW);
+    Serial.println(" LOW ");
+    
+  }
+  else 
+  {
+    digitalWrite(LED, HIGH);
+    Serial.println(" HIGH ");
+  }
 
 }
