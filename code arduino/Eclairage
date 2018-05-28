@@ -14,7 +14,7 @@ void setup() {
   rtc.writeProtect(false);
   pinMode(LED,OUTPUT);
   Serial.begin(9600);
-    
+  digitalWrite(LED,HIGH); 
 }
 
 void loop() {
