@@ -2,35 +2,34 @@
 //clk sur l'entrée 5
 //data sur l'entrée 4
 //rst sur l'entrée 3
+
 #include <DS1302.h>
 
 // Init the DS1302
 DS1302 rtc(3,4,5); //rst,data,clk
-const int LED=2;
+const int bande = 2;
 Time t;
+
 void setup() {
   // put your setup code here, to run once:
   rtc.halt(false);
   rtc.writeProtect(false);
-  pinMode(LED,OUTPUT);
+  digitalWrite(bande,HIGH);
+  pinMode(bande,OUTPUT);
   Serial.begin(9600);
-  digitalWrite(LED,HIGH); 
+    
 }
 
 void loop() {
   t = rtc.getTime();
   Serial.println(rtc.getTimeStr()); 
   delay(5000); 
-  if ((t.hour > 07) && (t.hour < 19))
-  {
-    digitalWrite(LED, LOW);
-    Serial.println(" LOW ");
-    
+  if ((t.hour > 07) && (t.hour < 19)) {
+    digitalWrite(bande, LOW);
+    Serial.println(" Light on ");
   }
-  else 
-  {
-    digitalWrite(LED, HIGH);
-    Serial.println(" HIGH ");
+  else {
+    digitalWrite(bande, HIGH);
+    Serial.println(" Light off ");
   }
-
 }
