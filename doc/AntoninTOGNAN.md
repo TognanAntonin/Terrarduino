@@ -141,7 +141,8 @@ Lors de cette séance, je me suis renseigné sur la manière de créé une appli
 
 * Entre séance su Mardi 27 Mars et Mercredi 4 Avril :
 
-J'ai préparé le "compte rendu" pour le passage à l'oral du Mercredi 4 Avril. Et cela m'a donné certaines idées pour la suite de notre projet .
+J'ai préparé le "compte rendu" pour le passage à l'oral du Mercredi 4 Avril. Et cela m'a donné certaines idées pour la suite de notre projet.
+Soudage sur les différents éléments pour notre projet.
 
 * Séance su 4 Avril 2018
 
@@ -150,18 +151,29 @@ J'ai ensuite fini par quelques recherches sur le UCA board.
 
 * Séance du 17 Avril
 
-Soudure 
-Mise à jour du Github général 
-Relais codage et compréhension
+Soudure .
+Mise à jour du Github général .
+Recherche sur les relais et début de codage sur ceux là.
 
 * Séance du 2 Mai
 
 Travail sur la plaque UCA.
 Inscription Things Network.
 Plaque à chercher Vendredi !
-Test brumisateur ok
+Test brumisateur ok.
 
 
 * week end du 18 Mai
 
 travail avec Sean travaille sur les relais code tout mettre ensemble fablab soudure toru terrarium 
+
+* Vendredi 18 Aout
+
+FabLab -> Préparation de la boite
+          Soudage
+          
+* Vendredi 25 Aout 
+
+Fab lab -> Finition du terrarium
+           Réunion avec Ferrero pour des explications 
+           Codage pour l'UCA board
