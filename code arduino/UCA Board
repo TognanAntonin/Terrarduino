@@ -1,0 +1,7 @@
+L'Uca Board est le composant qui va nous permettre d'avoir un terrarium connecté. 
+Grâce a un capteur posé sur une carte urduino mini , l'UCA board va récupérer les différentes informations les envoyé sur un LORA qui va nous renvoyer l'information sur une application appelé Cayenne.
+Sur cette application, avec notre capteur nous pouvons voir l'humidité et la température et si l'on veut recevoir des alertes sur notre téléphone ou en mail celon des plages 'humidité et de température différente.
+Plus d'information sur:
+https://github.com/FabienFerrero/UCA_Board
+
+vous pouvez voir notre code sur Terrarduino/UCA-DHT-22/
