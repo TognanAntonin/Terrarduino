@@ -184,3 +184,7 @@ Fab lab -> Finition du terrarium
  Ecriture du rapport et création de le présentation. 
  Montage. 
  Réglage de certains problèmes liés à l'électronique.
+
+* Mercredi 30 Juin
+
+ Nous avons éssayé de mettre en commun tous les codes qui marchaient ensemble en un seul mais nous avons eux de très nombreux problèmes.Ainsi qu'un problèmes de librairie que nous n'avons pas réussi à résoudre.
