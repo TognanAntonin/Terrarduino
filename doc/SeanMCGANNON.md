@@ -72,3 +72,17 @@ Nous avons à présent pratiquement tout le materiel besoin pour le projet. Le p
 > Entry 02/05/18
 
 Creation d'un compte Things Network: Id: Terrarduino Passwd: Terrarduino Email: seanachiketas@gmail.com
+
+> Entry 20/05/18
+
+Progression dans le code final!! Chaque composant électronique a son code, tout marche il nous manque encore le programme du module RTC.
+
+> Entry 18-25 /05/18
+
+Le terrarium est enfin monté avec le servomoteur, le radiateur, plaque chauffante implémentés; la boite a grillon a été adapté selon nos désirs. Terrarium et boite à grillon connecté. 
+
+> Entry 30-31/05/18
+
+Montage de tous les circuits électroniques sur le terrarium et la boite a grillon. Finition du code.
+Nous avons passé la nuit à subir les petites anomalies dont souvent les sources des ces anomalies étaient "aléatoires".
+Mais à présent tout marche sur un point de vue électronque. Probleme rencontre afin gerer le terrarduino a partir de notre telephone. A notre stade, nous pouvons uniquement recevoir les informations sur notre tell envoyé par le UCA board (grâce aux efforts persistentes de M. Tognan).
