@@ -44,15 +44,7 @@ Pour cela, nous voulons créer une base de données avec de nombreuses informati
 - Brumisateur;
 - Pompe;
 - Adaptateur 5V-12V-220V
-
-# Matériel manquant 
-
--Un vraie terrarium
--Une ampoule U.V
--Un réservoir d'eau 
--Des tubes
--Une boite
--Carte permatant la connexion
+- Plaque UCA
 
 # Population ciblée
 
@@ -61,8 +53,4 @@ En effet, lorsque nous possédons un reptile, il est compliqué d'en prendre soi
 Grâce à ce projet, nous pourrons toucher toutes les personnes ayant un ou plusieurs reptiles chez eux.
 Ce projet, possède une vraie clientèle. Il pourrait créer une idée d'entreprise créant et revendant des terrariums connectés.
 
-# travail restant 
 
--créer le terrarium "final"
--application 
-- finir les codes et mettre en commun
