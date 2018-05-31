@@ -165,7 +165,8 @@ Test brumisateur ok.
 
 * week end du 18 Mai
 
-travail avec Sean travaille sur les relais code tout mettre ensemble fablab soudure toru terrarium 
+Travail avec Sean sur les relais codes.
+Fablab ->soudure et création boîte principale terrarium 
 
 * Vendredi 18 Aout
 
@@ -177,3 +178,9 @@ FabLab -> Préparation de la boite
 Fab lab -> Finition du terrarium
            Réunion avec Ferrero pour des explications 
            Codage pour l'UCA board
+
+* Samedi 26 Aout
+
+ Ecriture du rapport et création de le présentation. 
+ Montage. 
+ Réglage de certains problèmes liés à l'électronique.
