@@ -59,3 +59,11 @@ En continuant mes recherches sur le brumisateur ultrason, j'ai trouvé les bonne
 J'ai enfin réussi à faire marcher le brumisateur ultrason. Le problème venait de l'alimentation qui n'était pas la bonne: je l'alimentais en 12V au lieu de 24V. En 24V ça marche mieux :) . 
 En fin de séance, j'ai commencé à faire un code qui permet l'éclairage de la led selon l'heure qu'il est à l'aide du module RTC.
 
+
+# Compte-rendu de la séance du 07 mai 2018
+J'ai continué mes recherches entamées la séance précédente pour faire un code permettant l'éclairage de la bande led selon l'heure avec Sean mais on n'a pas encore trouvé. Il faudra que je continue dans les prochains jours.
+
+
+#25 mai
+J'ai trouvé un moyen allumant une diode selpn l'heure de la journée. Il ne reste plus qu'à faire de même en remplaçant la diode par la bande led.
+
