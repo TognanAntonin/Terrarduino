@@ -1,0 +1,29 @@
+//clk sur l'entrée 5
+//data sur l'entrée 4
+//rst sur l'entrée 3
+
+#include <DS1302.h>
+
+// Init the DS1302
+DS1302 rtc(2,3,4); //rst,data,clk
+
+Time t;
+
+void setup() {
+  // put your setup code here, to run once:
+  rtc.halt(false);
+  rtc.writeProtect(false);
+  rtc.setTime(02,23,00);
+  Serial.begin(9600);
+    
+}
+
+void loop() {
+  t = rtc.getTime();
+  Serial.print(t.hour,DEC);
+  Serial.print(":");
+  Serial.print(t.min,DEC);
+  Serial.print(":");
+  Serial.println(t.sec,DEC);
+  delay(5000); 
+}
