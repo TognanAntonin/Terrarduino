@@ -1,22 +1,29 @@
-ajouter le temps
+#include <DS1302.h>
 
-float temps = 3;
 const int pompe = 2;
 
 void setup() {
-Serial.begin(9600);
-pinMode(pompe,OUTPUT);
-digitalWrite(pompe,HIGH); 
+  // put your setup code here, to run once:
+  rtc.halt(false);
+  rtc.writeProtect(false);
+  digitalWrite(pompe,HIGH);
+  pinMode(pompe,OUTPUT);
+  Serial.begin(9600);
+  rtc.setTime(11,01,00);  
 }
 
 void loop() {
-temps= 3; // en attendant le module RTC
-if(temps==3) {
-  Serial.println("Pompe on!");
-  digitalWrite(pompe,LOW); 
-  delay(5000);
-  Serial.println("Pompe off!");
-  digitalWrite(pompe,HIGH); 
-}
-delay(3000);
+ t = rtc.getTime();
+ Serial.println(rtc.getTimeStr()); 
+ delay(1000);
+  
+  if (((String)rtc.getTimeStr() == "07.00:00") ||  ((String)rtc.getTimeStr() == "11:01:30") || ((String)rtc.getTimeStr() == "15:00:00") || ((String)rtc.getTimeStr()=="22:45:30") ) {
+    digitalWrite(pompe, LOW);
+    Serial.println(" Water on ");
+    delay(10000);
+  }
+  else {
+    digitalWrite(pompe, HIGH);
+    Serial.println(" Water off ");
+  }
 }
