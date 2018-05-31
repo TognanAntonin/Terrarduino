@@ -1,6 +1,21 @@
-#include "DHT.h"   // Librairie des capteurs DHT
-#define DHTPIN 8   // pin sur lequel est branché le DHT
+#include <DHT.h>
+#include <DHT_U.h>
+#include <DS1302.h> // Librairie du module RTC
+//#include "DHT.h"   // Librairie des capteurs DHT
+#define DHTPIN 2   // pin sur lequel est branché le DHT le capteur 
 #define DHTTYPE DHT11       // DHT 11  (AM2302)
+#include <Servo.h>  // Librairie pour le servomoteur
+
+
+//Time
+// Init the DS1302
+DS1302 rtc(11,12,13); //rst,data,clk
+Time t;
+
+//Servomoteur
+Servo monServomoteur;
+int Laser = 8;
+int Detector = 9;
 
 //Premiere fonction :
 float poids;
@@ -11,25 +26,26 @@ byte SerialOK = 0;
 
 //Deuxieme fonction :
 DHT dht(DHTPIN, DHTTYPE); 
-float t;
+float temp;
 float tempMax;  // point chaud
 float tempMin;  // point froid
-float tempNuit;  // temp de nuit
+float tempN;  // temp de nuit
 float h;
 float humMax;   // humidite minimale
 float humMin;   // humidite maximale
 float lumiere;   // cycle lumineux (nombre d'heures de lumieres)
-int grillon;    // depend du poids sex age 
 
-const int radiateur = 4;   // relai pour le radiateur => humidite
-const int plaque = 3;      // relai pour la plaque chauffante => temperature
-const int brumisateur = 5; // relai pour le brumisateur => humidite
+const int plaque = 3;      // relai pour la plaque chauffante => temperature => 12V
+const int eclairage = 4;   // relai pour la eclairage de LED => 12V
+const int radiateur = 5;   // relai pour le radiateur => humidite => 12V
+const int pompe = 6;       // relai pour la pompe => 12V
+const int brumisateur = 7; // relai pour le brumisateur => humidite => 24V
 
 void setup() {
-  //  SoftwareSerial mySerial(8,9);   // entree 8 : reception et entree 9 : transmission
-  //  mySerial.begin(4800);
   Serial.begin(9600);
-
+  rtc.halt(false);
+  rtc.writeProtect(false);
+  rtc.setTime(8,00,00);
 
 // Caracteristiqures physique du reptile
 //________________________________________________________________________________________________________
@@ -44,13 +60,13 @@ void setup() {
     if (Serial.available()) {
       delay(5);    
       int var = Serial.read();
-//      if(var == nombre entier) {
-       age = var - 48;
-       Serial.print("age = ");          // unecessary
-       Serial.println(age);             // unecessary
+//    if(var == nombre entier) {
+      age = var - 48;
+      Serial.print("age = ");          // unecessary
+      Serial.println(age);             // unecessary
 //     }  
 //      else {
-//         Serial.println(" Erreur en rentrant l'age! ");
+//         Serial.println(" Erreure en rentrant l'age! ");
 //      }
     SerialOK += 1;
     }
@@ -144,67 +160,90 @@ dht.begin();
 pinMode(radiateur,OUTPUT);
 pinMode(plaque,OUTPUT);
 pinMode(brumisateur,OUTPUT);
+pinMode(eclairage,OUTPUT);
+pinMode(pompe,OUTPUT);
 digitalWrite(radiateur,HIGH); 
 digitalWrite(plaque,HIGH);
 digitalWrite(brumisateur,HIGH);
+digitalWrite(eclairage,HIGH);
+digitalWrite(pompe,HIGH); 
+
+pinMode(Laser, OUTPUT);
+pinMode(Detector, INPUT);
+monServomoteur.attach(10);
+
 }
 
  void loop() {
+t = rtc.getTime();
+Serial.println(rtc.getTimeStr());
 h = dht.readHumidity();
-t = dht.readTemperature();
-float hic = dht.computeHeatIndex(t,h,false);
+temp = dht.readTemperature();
+float hic = dht.computeHeatIndex(temp,h,false);
 
-if (isnan(t) || isnan(h)) {
+if (isnan(temp) || isnan(h)) {
   Serial.println("Lecture impossible!");
 }
 else {
-  Serial.print("Humidité : ");
-  Serial.print(h);
-  Serial.print(" %\t");
   Serial.print("Température :");
-  Serial.print(t);
-  Serial.println(" *C");
-  Serial.print("Indice de temp. : ");
-  Serial.print(hic);
-  Serial.println(" *C");
+  Serial.println(temp);
+  Serial.print("Humidité : ");
+  Serial.println(h);
 }
 delay(5000);
+
 // setting criterias
 // 1) Pagona
 if(espece == "Pogona Vitticeps") {
-  tempMax = 47;
-  tempMin = 26;
+  tempMax = 45;
+  tempMin = 35;
   tempN = 22;
-  humMax = 60;
-  humMin = 40;
+  humMax = 45;
+  humMin = 35;
   lumiere = 12;
   // grillon = 5;
-//Temperature
-if(t < tmin) {
-  Serial.println(" Too cold");
-  digitalWrite(plaque,LOW);
-} else {
-  Serial.println("All good");
-}
-
-//Humidité
-if(h < hmin) {
-  Serial.println(" Too dry!");
-  digitalWrite(brumisateur,LOW);
   
-} else if(h > hmax) {
-  Serial.println(" Too humide!");
-  digitalWrite(radiateur,LOW);
-} else {
-  Serial.println("All good");
-  digitalWrite(radiateur,HIGH);
-  digitalWrite(brumisateur,HIGH);
+//Temperature
+  if ((t.hour > 07) && (t.hour < 19)) {       // Day
+    if(temp < tempMin) {
+      Serial.println(" Temperature : Too cold");
+      digitalWrite(plaque,LOW);
+    } 
+    else {
+      Serial.println(" Temperature : All good");
+    }
+  } 
+  else {
+    if(temp < tempN) {
+      Serial.println(" Temperature : Too cold");
+      digitalWrite(plaque,LOW);
+    } 
+    else {
+      Serial.println(" Temperature : All good");
+    }
+  }
+  
+//Humidité
+  if(h < humMin) {
+    Serial.println(" Humidité : Too dry!");
+    digitalWrite(brumisateur,LOW);
+    digitalWrite(radiateur,HIGH);
+  } 
+  else if(h > humMax) {
+    Serial.println(" Humidité : Too humide!");
+    digitalWrite(radiateur,LOW);
+    digitalWrite(brumisateur,HIGH);
+  } 
+  else {
+    Serial.println(" Humidité : All good");
+    digitalWrite(radiateur,HIGH);
+    digitalWrite(brumisateur,HIGH);
+  }
+  Serial.println(" ");
+  Serial.println(" ");
+  delay(4000);
 }
-// => setting food
-// => setting lighting
-// => setting water  
-}
-
+ 
 // 2) Cameleon
 else if(espece == "Caméléon casque du Yémen") {
   tempMax = 37;
@@ -214,27 +253,46 @@ else if(espece == "Caméléon casque du Yémen") {
   humMin = 40;
   lumiere = 12;
   // grillon = 4; every 2 days
-//Temperature
-if(t < tmin) {
-  Serial.println(" Too cold");
-  digitalWrite(plaque,LOW);
-} else {
-  Serial.println("All good");
-}
-
-//Humidité
-if(h < hmin) {
-  Serial.println(" Too dry!");
-  digitalWrite(brumisateur,LOW);
   
-} else if(h > hmax) {
-  Serial.println(" Too humide!");
-  digitalWrite(radiateur,LOW);
-} else {
-  Serial.println("All good");
-  digitalWrite(radiateur,HIGH);
-  digitalWrite(brumisateur,HIGH);
-}
+//Temperature
+  if ((t.hour > 07) && (t.hour < 19)) {       // Day
+    if(temp < tempMin) {
+      Serial.println(" Temperature : Too cold");
+      digitalWrite(plaque,LOW);
+    } 
+    else {
+      Serial.println(" Temperature : All good");
+    }
+  } 
+  else {
+    if(temp < tempN) {
+      Serial.println(" Temperature : Too cold");
+      digitalWrite(plaque,LOW);
+    } 
+    else {
+      Serial.println(" Temperature : All good");
+    }
+  }
+  
+//Humidité
+  if(h < humMin) {
+    Serial.println(" Humidité : Too dry!");
+    digitalWrite(brumisateur,LOW);
+    digitalWrite(radiateur,HIGH);
+  } 
+  else if(h > humMax) {
+    Serial.println(" Humidité : Too humide!");
+    digitalWrite(radiateur,LOW);
+    digitalWrite(brumisateur,HIGH);
+  } 
+  else {
+    Serial.println(" Humidité : All good");
+    digitalWrite(radiateur,HIGH);
+    digitalWrite(brumisateur,HIGH);
+  }
+  Serial.println(" ");
+  Serial.println(" ");
+  delay(4000);
 }
 
 // 3) gecko léopard
@@ -248,27 +306,108 @@ else if(espece == "Gecko Léopard") {
   // grillon = 2 tous les jours
   
 //Temperature
-if(t < tmin) {
-  Serial.println(" Too cold");
-  digitalWrite(plaque,LOW);
-} else {
-  Serial.println("All good");
-}
-
-//Humidité
-if(h < hmin) {
-  Serial.println(" Too dry!");
-  digitalWrite(brumisateur,LOW);
+  if ((t.hour > 07) && (t.hour < 19)) {       // Day
+    if(temp < tempMin) {
+      Serial.println(" Temperature : Too cold");
+      digitalWrite(plaque,LOW);
+    } 
+    else {
+      Serial.println(" Temperature : All good");
+    }
+  } 
+  else {
+    if(temp < tempN) {
+      Serial.println(" Temperature : Too cold");
+      digitalWrite(plaque,LOW);
+    } 
+    else {
+      Serial.println(" Temperature : All good");
+    }
+  }
   
-} else if(h > hmax) {
-  Serial.println(" Too humide!");
-  digitalWrite(radiateur,LOW);
-} else {
-  Serial.println("All good");
-  digitalWrite(radiateur,HIGH);
-  digitalWrite(brumisateur,HIGH);
-}
+//Humidité
+  if(h < humMin) {
+    Serial.println(" Humidité : Too dry!");
+    digitalWrite(brumisateur,LOW);
+    digitalWrite(radiateur,HIGH);
+  } 
+  else if(h > humMax) {
+    Serial.println(" Humidité : Too humide!");
+    digitalWrite(radiateur,LOW);
+    digitalWrite(brumisateur,HIGH);
+  } 
+  else {
+    Serial.println(" Humidité : All good");
+    digitalWrite(radiateur,HIGH);
+    digitalWrite(brumisateur,HIGH);
+  }
+  Serial.println(" ");
+  Serial.println(" ");
+  delay(4000);
 }
 
+//_________________________________________________________________________________________
+//Ne depend de l'espece! Eclairage, eau 
+//ECLAIRAGE 
+  if ((t.hour > 07) && (t.hour < 19)) {
+    digitalWrite(eclairage, LOW);
+    Serial.println(" Light on ");
+  }
+  else {
+    digitalWrite(eclairage, HIGH);
+    Serial.println(" Light off ");
+  }
+//POMPE => eau + brumisateur  
+  if (((String)rtc.getTimeStr() == "08:00:30")||  ((String)rtc.getTimeStr() == "11:00:00") || ((String)rtc.getTimeStr() == "15:00:00") || ((String)rtc.getTimeStr()=="19:00:00") ) {
+    digitalWrite(pompe, LOW);
+    Serial.println(" Water on ");
+    delay(30000);
+  }
+  else {
+    digitalWrite(pompe, HIGH);
+    Serial.println(" Water off ");
+  }
+//FOOD
+  digitalWrite(Laser, HIGH);
+  boolean val = digitalRead(Detector);
 
+  if ((t.hour > 07) && (t.hour < 9)) {
+    if(val == 1){
+      for (int position = 0; position <= 180; position++) {    // partie pas utile maybe dans le futur le premier for
+        monServomoteur.write(position);
+        delay(15);
+      }
+      for (int position = 180; position >= 0; position--) {
+        monServomoteur.write(position);
+        delay(15);
+      }
+    }
+ }
+ else if ((t.hour > 11) && (t.hour < 12)) {
+    if(val == 1){
+      for (int position = 0; position <= 180; position++) {    // partie pas utile maybe dans le futur le premier for
+        monServomoteur.write(position);
+        delay(15);
+      }
+      for (int position = 180; position >= 0; position--) {
+        monServomoteur.write(position);
+        delay(15);
+      }
+    }
+ }
+ else if ((t.hour > 18) && (t.hour < 19)) {
+    if(val == 1){
+      for (int position = 0; position <= 180; position++) {    // partie pas utile maybe dans le futur le premier for
+        monServomoteur.write(position);
+        delay(15);
+      }
+      for (int position = 180; position >= 0; position--) {
+        monServomoteur.write(position);
+        delay(15);
+      }
+    }
+ }
+  
+delay(1000);
+  
 }
