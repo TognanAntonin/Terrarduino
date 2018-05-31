@@ -188,3 +188,7 @@ Fab lab -> Finition du terrarium
 * Mercredi 30 Juin
 
  Nous avons éssayé de mettre en commun tous les codes qui marchaient ensemble en un seul mais nous avons eux de très nombreux problèmes.Ainsi qu'un problèmes de librairie que nous n'avons pas réussi à résoudre.
+ 
+ * Jeudi 31 Mai
+ 
+ Notre projet marche enfin. Et nous recevons bien les alertes sur ma boite Mail.Nous avons fini le code et résolu les derniers Bugs.
