@@ -40,7 +40,6 @@ Pour cela, nous voulons créer une base de données avec de nombreuses informati
 - Trappe;
 - Reservoir d'eau;
 - Laser/récepteur;
-- Proximity sensor;
 - Brumisateur;
 - Pompe;
 - Adaptateur 5V-12V-220V;
