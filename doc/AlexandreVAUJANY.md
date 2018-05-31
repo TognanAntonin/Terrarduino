@@ -64,6 +64,10 @@ En fin de séance, j'ai commencé à faire un code qui permet l'éclairage de la
 J'ai continué mes recherches entamées la séance précédente pour faire un code permettant l'éclairage de la bande led selon l'heure avec Sean mais on n'a pas encore trouvé. Il faudra que je continue dans les prochains jours.
 
 
-#25 mai
+# 25 mai
 J'ai trouvé un moyen allumant une diode selpn l'heure de la journée. Il ne reste plus qu'à faire de même en remplaçant la diode par la bande led.
+
+# 31 mai
+Notre projet fonctionne. Tout est bon. Nous avons atteint nos objectifs.
+
 
