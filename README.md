@@ -31,7 +31,7 @@ Pour cela, nous voulons créer une base de données avec de nombreuses informati
 
 - Capteur de température/humidité;
 - Terrarium en plexiglasse;
-- Ampoule U.V (LED pour l'instant);
+- Bande de LED;
 - Plaque chauffante;
 - Module RTC;
 - Radiateur; 
@@ -43,8 +43,10 @@ Pour cela, nous voulons créer une base de données avec de nombreuses informati
 - Proximity sensor;
 - Brumisateur;
 - Pompe;
-- Adaptateur 5V-12V-220V
-- Plaque UCA
+- Adaptateur 5V-12V-220V;
+- Plaque UCA;
+- Module à 8 relais;
+
 
 # Population ciblée
 
